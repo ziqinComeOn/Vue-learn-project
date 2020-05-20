@@ -14,12 +14,14 @@ import Vbind from '@/components/page/Vbind'
 import Vuedirective from '@/components/page/Vue.directive'
 import Vueextend from '@/components/page/Vue.extend'
 import Vueset from '@/components/page/Vue.set'
+import Login from '@/components/shop/Login'
 
 Vue.use(Router)
 
 export default new Router({
   // mode: 'history', // mode的两个值history（url不带#）和 hash(url带#)
   routes: [
+    {path: '/login', name: 'Login', component: Login},
     {
       path: '/',
       name: 'Pos',
